@@ -1,0 +1,397 @@
+/* Estilos Globais */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4, 
+h5 {
+    font-size: 2.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 2rem 6rem;
+    background-color: #4c6e97;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+button:hover {
+    background: #2a4361;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0px 17px 12px -5px rgba(0,0,0,0.5);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* Nav e Hero */
+
+.mainHeader {
+    background-color: #131c27;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.mainHeader nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    min-height: 10vh;
+    padding: 3rem;
+    width: 90%;
+    margin: auto;
+}
+
+.mainHeader nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.mainHeader #header__logo {
+    display: flex;
+    flex: 5 1 40rem;
+    font-family: 'Aladin', cursive;
+    font-size: 3rem;
+    letter-spacing: .13rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(rgb(0, 0, 0, .4), transparent),url(./img/landing-page.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    min-height: 90vh;
+    color: white;
+    text-align: center;
+}
+
+.hero h3 {
+    padding: 5rem;
+    line-height: 1.5;
+}
+
+
+/* Locations Section */
+
+#locations {
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, .4), transparent),url(./img/new-york-page.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+}
+
+.locations__header {
+    width: 90%;
+    margin: auto;
+    padding: 0rem 0rem 30rem 0rem;
+    z-index: 10;
+}
+
+.locations__header h2 {
+    padding: 1rem 0rem;
+    text-decoration: underline;
+}
+
+.locations__header h3 {
+    padding: 4rem 0rem;
+  
+}
+
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.moving-cloud-1 {
+    animation: cloudAnimation 3s infinite alternate ease-in-out;
+    z-index: -2;
+}
+
+.moving-cloud-2 {
+    top: 10%;
+    z-index: -3;
+    opacity: .7;
+    animation: cloudAnimation 3.2s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimation {
+    0% {
+        transform: translate(10%, -10%);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
+
+    /*from {
+
+    }
+    
+    to {
+
+    }
+    */
+}
+
+/* Benefits Section */
+
+.benefits__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: #343c44;
+    min-height: 30vh;
+    padding: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.benefits__header h2 {
+    font-weight: normal;
+}
+
+.benefits__header h3 {
+    padding: 1rem;
+}
+
+.benefits__cards {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.benefits__cards--card--icon img {
+    margin: 2%;
+    height: 6rem;
+}
+
+.benefits__cards--card h4 {
+    margin-top: 3rem;
+}
+
+.benefits__cards--card h4, p {
+    color: rgb(56, 56, 56);
+    padding: 1rem;
+}
+
+.benefits__cards--card--icon {
+    border-radius: 1rem 1rem 0 0;
+    background-color: #27394e;
+}
+
+.benefits__cards--card {
+    box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.2), 0px 20px 20px 0px rgba(0,0,0,0.1);
+    flex: 1 1 25rem;
+    min-height: 30vh;
+    margin: 2rem 5rem;
+    border-radius: 1rem;
+}
+
+/*Contact Section*/
+
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, .4), transparent), url(./img/contact-mountain.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+
+.form-head {
+    text-align: center;
+    padding: 4rem;
+}
+
+.name-form,
+.email-form {
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label {
+    margin: 0rem 3rem;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+}
+
+.form-wrapper input:focus {
+    outline: none;
+}
+
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 6rem;
+}
+
+/* Footer Section */
+
+footer {
+    color: white;
+    background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+
+.footer-wrapper h5 {
+    flex: 1 1 40rem;
+}
+
+.footer-wrapper ul {
+    display: flex;
+    list-style: none;
+    flex:  1 1 4rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+    .mainHeader nav {
+        text-align: center;
+        padding-bottom: 4.5rem;
+    }
+
+    .mainHeader #header__logo {
+        font-size: 4.5rem;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .cloud {
+        width: 80rem;
+    }
+
+    .moving-cloud-2{
+        top: 5%;
+    }
+
+    .benefits__cards {
+        padding: 5rem 0;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .cloud {
+        width: 50rem;
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .footer-wrapper h5 {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+}
