@@ -126,7 +126,7 @@ button:hover {
     justify-content: center;
     align-items: center;
 
-    background: linear-gradient(rgb(0, 0, 0, .4), transparent),url(./img/landing-page.jpg);
+    background: linear-gradient(rgb(0, 0, 0, .4), transparent),url(landing-page.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -146,7 +146,7 @@ button:hover {
 
 #locations {
     min-height: 100vh;
-    background: linear-gradient(rgb(0, 0, 0, .4), transparent),url(./img/new-york-page.png);
+    background: linear-gradient(rgb(0, 0, 0, .4), transparent),url(new-york-page.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -274,7 +274,7 @@ button:hover {
 
 #contact {
     min-height: 100vh;
-    background: linear-gradient(rgb(0, 0, 0, .4), transparent), url(./img/contact-mountain.png);
+    background: linear-gradient(rgb(0, 0, 0, .4), transparent), url(contact-mountain.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
